@@ -1,0 +1,24 @@
+
+
+pre {
+    width: min-content;
+    max-width: 100%;
+    margin: auto;
+    padding-right: 2rem;
+    text-align: initial!important;
+
+    .code {
+        background-color: $grey;
+        color: $white;
+        border: 1px solid #999;
+        display: block;
+        padding: 20px;
+        overflow-y: auto;
+    
+    }
+
+    // @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //     text-align: left;
+    //     padding-left: 10px;
+    // }
+}

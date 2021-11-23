@@ -1,0 +1,84 @@
+@import 'hamburgers';
+
+#about-me-page {
+    text-align: center;
+    font-family:$font;
+    color: $white;
+
+
+
+
+    header {
+        
+        background-color: $orange;
+        background-position: center;
+        border-bottom: 3px solid $white;
+
+        h1 {
+            color: $white;
+            font-size: 3rem;
+            padding: 15px 0px;
+           
+        }
+    }  
+
+
+}
+
+.about{
+    margin-top: 3px;
+    margin-bottom: 50px;
+    @media (min-width: 1520px){
+        
+        padding: 0px 10%;
+    }
+
+
+    }
+    .scs-img{
+        max-height: 200px;
+        max-width: 100%;
+        
+        padding: 10px 10% 0px 10%;
+    }
+
+    .article{
+        
+        background-color: $white;
+        color: $grey;
+        @media (min-width: 992px){
+            margin-bottom: 3px;
+        }
+
+    
+        h3{
+            font-size: 30px ;
+            padding:20px 10%;
+        }
+
+        p{
+            font-size: 18px;
+            padding: 0px 10%;
+            margin-bottom: 0px;
+        }
+
+    
+}
+
+.me{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: $grey;
+     p{
+         margin: 20px 0px;
+     }
+}
+.avatar{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}

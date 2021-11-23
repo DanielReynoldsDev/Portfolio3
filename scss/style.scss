@@ -1,0 +1,125 @@
+// partial imports
+@import 'variables',
+        'header',
+        'contact',
+        'nav',
+        'about',
+        'media',
+        'hamburgers',
+        'base',
+        'code',
+        'cards';
+
+
+
+// Universal Selectors
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger {
+        margin-right: 15px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smothing: grayscale;
+    }
+
+    .wrapper main {
+        background-color: $white;
+        padding-bottom: 3rem;
+
+       #scroll-up {
+        display: block;
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: $font;
+        font-size: 2rem;
+        color: $orange;
+        text-decoration: none;
+        width: 250px;
+        margin: auto;
+        
+
+        @media (max-width: 1024px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+
+        a {
+            color: $orange;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: .5s;
+        }
+
+        i {
+            color: $orange;
+            transition: .5s;
+        }
+
+        &:hover {
+            a {
+                color: $grey;
+
+            }
+            
+            i {
+                color: $grey;
+
+            }
+        }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            padding-bottom: 60px;
+        }
+       }
+    }
+
+    header {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            @media (max-width: 1024px) {
+                margin-top: 0;
+            }
+            margin-top: -22px;
+        }
+    }
+
+    #projects {
+        padding: 3rem 5rem 0rem 5rem;
+
+        @media screen and (max-width: 1240px) {
+            padding: 3rem 1rem 0rem 1rem;
+        }
+
+        @media screen and (max-width: 1110px) {
+            padding: 3rem 0rem 0rem 0rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 3rem 4rem 0rem 4rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 3rem 2rem 0rem 2rem;
+        }
+    }
+
+    .icon-visible {
+        display: block;
+    }
+
+    .icon-hidden {
+        display: none;
+    }

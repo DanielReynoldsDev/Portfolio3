@@ -1,0 +1,35 @@
+nav {
+    @media (min-width: 1024px){
+        display: flex;
+    }
+}
+
+.wrapper main {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 100%;
+    }
+
+    @media (max-width: 1023px) {
+        margin-top: 7rem;
+    }
+
+    @media (min-width: 1024px){
+        margin-left: 13.5rem;
+    }
+}
+
+.wrapper {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        overflow-x: hidden;
+        background-color: $black;
+    
+        @media (max-width: 1024px) {
+            margin-top: 7em;
+        }
+
+        @media (min-width: 1024px){
+            margin-left: 13.5em;
+        }
+      }
+}
+

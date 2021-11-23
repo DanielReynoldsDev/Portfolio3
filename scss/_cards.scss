@@ -1,0 +1,43 @@
+.cards{
+    background-color: $lgrey;
+    border-top: 3px solid $white;
+
+    // Card Container
+    .cards-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+        //Change direction when not on phone
+        @media (min-width: 576px){
+            //margin-left: 200px;
+            padding: 0px 10%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .card{            
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            //Spacing for when not on phone
+            @media (min-width: 576px){
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .btn{
+                background-color: $orange;
+                border-color: $orange;
+            }
+        }
+    }
+}
+
+.card:hover {
+    opacity: 0.8;
+  }
