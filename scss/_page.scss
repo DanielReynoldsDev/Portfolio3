@@ -1,0 +1,23 @@
+// Repeating Styles for the Page's
+
+*{
+	box-sizing: Border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georama', sans-serif;
+}
+
+p {
+    font-family: 'Georama', sans-serif;
+}
+
+//Moves articles from behind nav on larger screens
+.about{
+    @media (min-width: 575px) {
+        margin-left: 200px;
+    }   
+}

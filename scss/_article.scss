@@ -1,39 +1,27 @@
-@import 'hamburgers';
-
-#about-me-page {
-    text-align: center;
-    font-family:$font;
-    color: $white;
-
-
-
-
-    header {
-        
-        background-color: $orange;
-        background-position: center;
-        border-bottom: 3px solid $white;
-
-        h1 {
-            color: $white;
-            font-size: 3rem;
-            padding: 15px 0px;
-           
-        }
-    }  
-
-
-}
-
 .about{
     margin-top: 3px;
     margin-bottom: 50px;
     @media (min-width: 1520px){
-        
+        display: flex;
         padding: 0px 10%;
     }
 
+    .avatar{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3px;
+        max-height: 500px;
+        //Changes position when not on phone
+        @media (min-width: 1520px){
 
+            max-height: 500px;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
     }
     .scs-img{
         max-height: 200px;
@@ -45,7 +33,6 @@
     .article{
         
         background-color: $white;
-        color: $grey;
         @media (min-width: 992px){
             margin-bottom: 3px;
         }
@@ -62,7 +49,7 @@
             margin-bottom: 0px;
         }
 
-    
+    }
 }
 
 .me{
@@ -70,20 +57,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    color: $grey;
      p{
          margin: 20px 0px;
      }
 }
-.avatar{
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3px;
-}
-
-// .ce{
-//     margin-top: 10px;
-//     margin-bottom: 10px;
-// }

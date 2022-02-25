@@ -38,7 +38,7 @@
                         <div class="article">
                             <h3>JavaScript</h3>
                             <i class="fab fa-js-square fa-10x"></i>
-                            <p>
+                            <p class="ce">
 
                                 My first taste of this kind of programming language was with javascript, some of
                                 which you can see within my portfolio.
@@ -71,16 +71,93 @@ window.addEventListener('load', function () {
 });
                             </code>
                         </pre>
-                            <p>   
+                            <p class="ce">   
                                 This code above is how i added the animation effect to my headline on my main page. Its created by
                                 waiting for the page to load before executing a loop which checks to see how many letters it has 
                                 already typed, adding the next letter in the list until the message becomes the correct length. 
                             </p>
-                            <p>
+                            <p class="ce">
                                 It was an easy choice to use javascript for this task as it works well with HTML and CSS as well as 
                                 being highly documented and the use of the browser console helps a great deal with debugging.
                             </p>
                         </div>
+                                                    <!---->
+                        <div class="article">
+                            <h3>SQL</h3>
+                            <i class="fas fa-database fa-10x"></i>
+                            <p class="ce">
+
+                                SQL has been really interesting for me, being so widely used its often the first choice for most 
+                                data storage and retrieval needs.
+                            
+                            </p>
+<p class="ce">
+                            <img src="/img/database.png" alt="">
+                        </p>
+                            <p class="ce">   
+                                The image above represents a 'Database', full of information around a singular topic, in this case Movies.
+                                The way the individual tables are structured allows information to be stored into catagories which makes it 
+                                able to retrieve any section, sections or subsections for display depending on the query asked. 
+                            </p>
+                            <pre>
+                            <code class="code">
+SELECT
+  mov_title AS "Movie Title",
+  mov_time AS "Runtime",
+  rev_stars AS "Rating"
+FROM
+  movie
+WHERE
+  act_id = (
+    SELECT
+      act_id
+    FROM
+      actor
+    WHERE
+      act_fname = 'Robin'
+      AND act_lname = 'Williams'
+  );
+                            </code>
+                        </pre>
+                            <p class="ce">   
+                                This query is used to search the database and form a table, listing movies, how long they are and 
+                                what the average rating reviewers gave them. It also narrows down the list to only include movies
+                                with Robin Williams, a personal favourite of mine.
+                            </p>
+                        </div>
+
+                        <div class="article">
+                            <h3>PHP</h3>
+                            
+                            <p class="ce">
+
+                                Here i used PHP to handle serverside form validation, this will check if the contact page is filled 
+                                in correctly before attempting to post the data to the SQL table 
+                            
+                            </p>
+                            <pre>
+                            <code class="code">
+		if(empty($_POST['fname'])){
+			$errors['fname'] = 'A name is required';
+		} else{
+			$fname = $_POST['fname'];
+			if(!preg_match('/^[a-zA-Z\s]+$/', $fname)){
+				$errors['fname'] = 'Names must be letters and spaces only';
+			}
+		}
+                            </code>
+                        </pre>
+                            <p class="ce">   
+                                The first line is a simple 'if' statement that i first use to ask if the first name section has anything
+                                in. If not it will inform the user that a name is required before continuing. 
+                            </p>
+                            <p class="ce">
+                                The 'else' statement runs a function that checks the value of the first name box against regular expression
+                                characters used for names, of REGEX for short. If there are any charaters that shouldnt be there the PHP
+                                will inform the user.
+                            </p>
+                        </div>
+
                     </div>
                     <!-- /Coding Examples Placeholder -->
         </main>
