@@ -10,7 +10,7 @@
         top: 0;
         left: 0;
         font-family: $font;
-        background-color: $orange;
+        background-color: $black;
 
         a {
             color: $white;
@@ -28,12 +28,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-bottom: 3px solid $white;
+            border-bottom: 3px solid $orange;
             padding: 10px 0px;
             
             &:hover {
-                color: $grey;
-                background-color: $white;
+                color: $white;
+                background-color: $orange;
                 transition: .5s;
             }
 
@@ -51,7 +51,7 @@
                 position: relative;
                 margin: 15px 0;
                 color: $white;
-                border: 5px solid $white;
+                border: 5px solid $orange;
                 border-radius: 50px;
                 width: 100px;
                 height: 100px;
@@ -67,8 +67,8 @@
         overflow-y: auto;
         flex: 0 0 200px;
         height:100%;
-        background-color: $orange;
-        border-right: 3px solid $white;
+        background-color: $black;
+        border-right: 3px solid $orange;
     }
 
 
@@ -81,15 +81,22 @@
         a {
             display: inline-block;
             width: 100%;
-            color: $white;
+            color: $orange;
+            text-shadow: 0 0 7px $orange;
+            text-shadow: 0 0 10px $orange;
+            text-shadow: 0 0 21px $orange;
+            
             font-size: 1.2rem;
             text-decoration: none;
             transition: .5s;
             padding-bottom: 5px;
+            
 
             &:hover {
-            text-shadow: 0px 0px 10px $white;
-            color: $grey;
+            // text-shadow: 0px 0px 10px $white;
+            // color: $grey;
+            color: $white;
+            background: $orange;
             //background-color: $white;
             }
         }
@@ -145,6 +152,11 @@
         justify-content: space-around;
         list-style: none;
         color: $white;
+        
+        ul{
+
+            padding-left: 0px;
+        }
 
 
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -163,7 +175,7 @@
                 }
     
                 &:hover {
-                    color: $grey;
+                    color: $orange;
                 }
             }
         }
@@ -316,3 +328,9 @@
         border-bottom: solid 7.0711px $white;
         border-left: solid 7.0711px $white;
       }
+
+.smlinks {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}

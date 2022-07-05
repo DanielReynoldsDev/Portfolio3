@@ -22,3 +22,19 @@ pre {
     //     padding-left: 10px;
     // }
 }
+
+.cespacer{
+    
+    padding-bottom: 20px;
+    // background-color: $orange;
+}
+
+.code {
+    background-color: $grey;
+    color: $white;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    overflow-y: auto;
+
+}

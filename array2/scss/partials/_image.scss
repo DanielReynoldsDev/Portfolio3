@@ -1,0 +1,17 @@
+.image-container {
+    display: inline-block;
+    height: auto;
+    width: 400px;
+    margin-top: 10px;
+
+    .image {
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+}

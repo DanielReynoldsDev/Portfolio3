@@ -34,57 +34,59 @@
     }
 
     .wrapper main {
-        background-color: $white;
-        padding-bottom: 3rem;
+        background-color: $black;
+        // padding-bottom: 3rem;
 
        #scroll-up {
-        display: block;
-        padding-bottom: 30px;
-        text-align: center;
-        font-family: $font;
-        font-size: 2rem;
-        color: $orange;
-        text-decoration: none;
-        width: 250px;
-        margin: auto;
-        
-
-        @media (max-width: 1024px) {
-            font-size: 1.5rem;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 1.2rem;
-        }
-
-        a {
-            color: $orange;
-            font-size: 2rem;
+            display: block;
+            padding: 10px 0;
+            margin-top: -10px;
+            text-align: center;
             text-decoration: none;
-            transition: .5s;
-        }
+            font-family: $font;
+            font-size: 2rem;
 
-        i {
-            color: $orange;
-            transition: .5s;
-        }
-
-        &:hover {
             a {
-                color: $grey;
-
+                font-size: 1.5rem;
+                color: $white;
+                transition: .5s;
+                text-decoration: none;
             }
-            
+
             i {
-                color: $grey;
+                color: $white;
+                transition: .5s;
+            }
 
+            &:hover {
+
+                a {
+                    color: $orange;
+                    text-shadow:
+                    0 0 42px $orange,
+                    0 0 82px $orange,
+                    0 0 92px $orange,
+                    0 0 102px $orange,
+                    0 0 151px $orange;
+                    
+                }
+                
+                i {
+                    color: $orange;
+                    text-shadow:
+                    0 0 42px $orange,
+                    0 0 82px $orange,
+                    0 0 92px $orange,
+                    0 0 102px $orange,
+                    0 0 151px $orange;
+                    
+                }
+            }
+
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                margin-top: -22px;
             }
         }
-
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-            padding-bottom: 60px;
-        }
-       }
     }
 
     header {

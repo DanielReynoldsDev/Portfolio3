@@ -1,0 +1,37 @@
+.form {
+    width: 400px;
+    height: 160px;
+    display: flex;
+
+h2 {
+    padding: 10px;
+}
+    >form {
+        height: 80px;
+        padding: 10px 0;
+
+        input {
+            height: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border-width: 1px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+        }
+
+        button {
+            height: 100%;
+            width: 69%;
+            padding: 20px;
+            margin-top: 10px;
+
+            &.new-img {
+                float: right;
+                width: 29%;
+                padding: 0px;
+            }
+        }
+    }
+}

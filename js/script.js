@@ -3,6 +3,7 @@
 window.addEventListener('load', function () {
   function createTypewriter(text, id) {
     var i = 0;
+    var j = 0;
     var speed = 90;
 
     function typeWriter(text, id) {
@@ -18,7 +19,10 @@ window.addEventListener('load', function () {
     typeWriter(text, id);
   }
 
-  createTypewriter("Hi, I am Daniel Reynolds ", "greetings");
+  createTypewriter("Hi, I am  ", "greetings");
+  setTimeout(function () {
+    createTypewriter("Daniel Reynolds ", "greetingsname");
+  }, 1000);
   setTimeout(function () {
     createTypewriter("I'm a Web Developer!", "banner-tagline");
   }, 3000);
@@ -42,7 +46,7 @@ const form = document.getElementById("contact-form");
 const fName = document.getElementById("firstnameinput");
 const lName = document.getElementById("lastnameinput");
 const email = document.getElementById("email");
-const subject = document.getElementById("subject").required = false;
+const subject = document.getElementById("subject")
 const textInput = document.getElementById("message");
 const error = document.getElementById("error");
 
@@ -57,6 +61,10 @@ form.addEventListener('submit', (e) => {
 
   if (lastnameinput.value === '' || lastnameinput.value == null) {
     messages.push('Please enter your Last Name')
+  }
+
+  if (!isSubject(subject.value)) {
+    messages.push('That subject does not look correct')
   }
 
   // If user has entered email/ else if, then compares value to regex format
@@ -74,11 +82,15 @@ form.addEventListener('submit', (e) => {
   // If  message length  >  0, prevent submit & display messages in error div
   if (messages.length > 0) {
     e.preventDefault()
-    error.innerText = messages.join(', ')
+    error.innerText = messages.join('\n')
   }
 })
 
 // Function tests variable against regex format
 function isEmail(i) {
   return /^([a-z\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/.test(i);
+}
+
+function isSubject(j) {
+  return /^[a-zA-Z\s0-9\.\,\;\-\!\?\@\'\:\—]+$/.test(j);
 }

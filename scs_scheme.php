@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en-gb">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Web and Software develper portfolio">
+            <meta name="keywords" content="HTML, CSS, JavaScript, SCSS, Bootstrap, jQuery, React, PHP, MySQL, SQL, Web developer, Software Developer">
+            <meta name="author" content="Daniel Reynolds">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Daniel Reynolds Portfolio || SCS Scheme</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- /jQeury -->
+            
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--/Bootstrap-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- /CSS -->
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet">
+    <!--/Google Font-->
+
+    <!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/21f3d37c91.js" crossorigin="anonymous"></script>
+    <!-- /Font Awesome -->
+                <!-- Javascript -->
+                <script src="js/script.js">               
+        </script>
+        <!-- /Javascript -->
+
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    
+        </head>
+        <body>
+            <div id="about-me-page" class="wrapper">
+                <main>
+                    <header class="ncontainer">
+                        <h1 class="neonText">SCS Scheme</h1>
+                    </header>
+                    <div class="abcont">
+                    <div class="content" id="content">
+                        <div class="about">
+                            <!-- Netmatters Articles -->
+                            <div class="scs-container">
+                            <img class="scs-img" src="../img/scs.png" alt="SCS">
+                            <div class="article">
+                                <h3>Introduction to Scion Coalition Scheme</h3>
+                                <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters 
+                                    in order to give willing candidates the opportunity to enter the industry as web developers. 
+                                    Under the supervision of senior web developers, scions generally aim to complete training within 
+                                    six to nine months. The course is intensive and therefore the level of learning achieved is 
+                                    extensive in a short space of time.</p>
+                            </div>
+                        </div>
+                        <div class="scs-container">
+                            <img class="scs-img" src="../img/Treehouse.jpg" alt="Treehouse">
+                            <div class="article">
+                                <h3>Treehouse</h3>
+                                <p>Treehouse is an online learning community, featuring videos covering a number of topics from 
+                                    basic HTML to C# programming, iOS development, data analysis, and more. By completing courses 
+                                    users can earn points, allowing them to track their progress and see how much they've covered 
+                                    in certain areas.
+                                    Total Score
+                                    teamtreehouse.com/danielreynolds4</p>
+                            </div>
+                
+                        </div>
+                        <div class="scs-container">
+                            <img class="scs-img" src="../img/netmatters.jpg" alt="netmatters">
+                            <div class="article">
+                                <h3>About Netmatters</h3>
+                                <p>Established in 2008
+                                    Norfolk's leading technology company
+                                    Winner of the Princess Royal Training Award
+                                    Winner of EDP Skills of Tomorrow Award
+                                    80+ staff, 2 locations across Norfolk
+                                    Digital Marketing, Website & Software development & IT Support
+                                    Broad spectrum of clients, working nationwide
+                                    Operate to strict company values</p>
+                            </div>
+                        </div>
+                            <!-- Netmatters Articles -->
+                        </div>
+                    </div>
+</div>
+                    <?php include "inc/contact.php" ?>
+        </main>
+
+                
+                
+                
+        <?php include "inc/desknav.php" ?>
+
+<?php include "inc/mobilenav.php" ?>
+            </div>
+        </body>
+
+    </html>
