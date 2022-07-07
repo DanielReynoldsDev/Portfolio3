@@ -56,11 +56,15 @@ form.addEventListener('submit', (e) => {
 
   // If users have not entered a value for name.
   if (firstnameinput.value === '' || firstnameinput.value == null) {
-    messages.push('Please enter your First Name')
+    messages.push('Please enter your First Name\n')
   }
 
   if (lastnameinput.value === '' || lastnameinput.value == null) {
-    messages.push('Please enter your Last Name')
+    messages.push('Please enter your Last Name\n')
+  }
+
+  if (!isSubject(subject.value)) {
+    messages.push('That subject does not look correct\n')
   }
 
   if (!isSubject(subject.value)) {
@@ -69,14 +73,14 @@ form.addEventListener('submit', (e) => {
 
   // If user has entered email/ else if, then compares value to regex format
   if (email.value === '' || email.value == null) {
-    messages.push('Please enter your email address')
+    messages.push('Please enter your email address\n')
   } else if (!isEmail(email.value)) {
-    messages.push('That email address does not look correct')
+    messages.push('That email address does not look correct\n')
   }
 
   // If user has not filled in the textarea
   if (textInput.value === '' || textInput == null) {
-    messages.push('Please write me a message')
+    messages.push('Please write me a message\n')
   }
 
   // If  message length  >  0, prevent submit & display messages in error div

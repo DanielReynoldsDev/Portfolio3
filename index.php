@@ -31,5 +31,4 @@
                 <?php include "inc/mobilenav.php" ?>
             </div>
         </body>
-
     </html>
